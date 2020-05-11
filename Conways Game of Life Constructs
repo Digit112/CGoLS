@@ -1,0 +1,81 @@
+
+# Gosper Glider Gun, first ever infinitely expanding pattern
+buf1[25 + width] = 255
+buf1[23 + width*2] = 255
+buf1[25 + width*2] = 255
+buf1[13 + width*3] = 255
+buf1[14 + width*3] = 255
+buf1[21 + width*3] = 255
+buf1[22 + width*3] = 255
+buf1[35 + width*3] = 255
+buf1[36 + width*3] = 255
+buf1[12 + width*4] = 255
+buf1[16 + width*4] = 255
+buf1[21 + width*4] = 255
+buf1[22 + width*4] = 255
+buf1[35 + width*4] = 255
+buf1[36 + width*4] = 255
+buf1[1  + width*5] = 255
+buf1[2  + width*5] = 255
+buf1[11 + width*5] = 255
+buf1[17 + width*5] = 255
+buf1[21 + width*5] = 255
+buf1[22 + width*5] = 255
+buf1[1  + width*6] = 255
+buf1[2  + width*6] = 255
+buf1[11 + width*6] = 255
+buf1[15 + width*6] = 255
+buf1[17 + width*6] = 255
+buf1[18 + width*6] = 255
+buf1[23 + width*6] = 255
+buf1[25 + width*6] = 255
+buf1[11 + width*7] = 255
+buf1[17 + width*7] = 255
+buf1[25 + width*7] = 255
+buf1[12 + width*8] = 255
+buf1[16 + width*8] = 255
+buf1[13 + width*9] = 255
+buf1[14 + width*9] = 255
+
+# Spaceship
+buf1[11 + width*4] = 255
+buf1[14 + width*4] = 255
+buf1[10 + width*5] = 255
+buf1[10 + width*6] = 255
+buf1[14 + width*6] = 255
+buf1[10 + width*7] = 255
+buf1[11 + width*7] = 255
+buf1[12 + width*7] = 255
+buf1[13 + width*7] = 255
+
+# Diehard
+buf1[16 + width*15] = 255
+buf1[10 + width*16] = 255
+buf1[11 + width*16] = 255
+buf1[11 + width*17] = 255
+buf1[15 + width*17] = 255
+buf1[16 + width*17] = 255
+buf1[17 + width*17] = 255
+
+# Glider, simplest spaceship
+buf1[2] = 255
+buf1[2 + width] = 255
+buf1[2 + width*2] = 255
+buf1[width] = 255
+buf1[1 + width*2] = 255
+
+# Explosion
+buf1[16 + 14*width] = 255
+buf1[15 + 15*width] = 255
+buf1[16 + 15*width] = 255
+buf1[17 + 15*width] = 255
+buf1[15 + 16*width] = 255
+buf1[17 + 16*width] = 255
+buf1[16 + 17*width] = 255
+
+# R-pentanimo, the glider produced ar 69 was the first ever observed
+buf1[16 + width*15] = 255
+buf1[17 + width*15] = 255
+buf1[15 + width*16] = 255
+buf1[16 + width*16] = 255
+buf1[16 + width*17] = 255
