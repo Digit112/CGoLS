@@ -128,18 +128,19 @@ struct cgl* CGoL(struct cgl* data, int frames) {
 
 int main() {
 	// number of frames to output including initial frame
-	int frames = 55;
+	int frames = 64;
 	
 	// Read data from file and allocate space for simulation results
 	struct cgl* data = get_cgl("0.cgl", frames);
 	
 	// Perform simulation
 	data = CGoL(data, frames);
-	printf("Simulation Complete.\n");
+	printf("Simulation Complete. Saving Output.\n");
 	
 	// Save output to cgl files
 	FILE* fs;
-	char buf[12];
+	char buf[36];
+	
 	for (int f = 0; f < frames; f++) {
 		snprintf(buf, 36, "CGoL_out/%d.cgl", f);
 		fs = fopen(buf, "wb");

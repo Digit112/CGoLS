@@ -74,8 +74,8 @@ buf1[17 + 16*width] = 255
 buf1[16 + 17*width] = 255
 
 # R-pentanimo, the glider produced ar 69 was the first ever observed
-buf1[16 + width*15] = 255
-buf1[17 + width*15] = 255
-buf1[15 + width*16] = 255
-buf1[16 + width*16] = 255
-buf1[16 + width*17] = 255
+buf1[128 + width*127] = 255
+buf1[129 + width*127] = 255
+buf1[127 + width*128] = 255
+buf1[128 + width*128] = 255
+buf1[128 + width*129] = 255
